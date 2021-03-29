@@ -1,4 +1,6 @@
-window.addEventListener('DOMContentLoaded', function() {
+// version 1
+
+window.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById("calc-form");
   if (form) {
     setupIntialValues();
