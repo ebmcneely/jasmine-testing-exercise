@@ -19,10 +19,21 @@ function getCurrentUIValues() {
   }
 }
 
-// Get the inputs from the DOM.
-// Put some default values in the inputs
+// Get the inputs from the DOM. ***DONE
+// Put some default values in the inputs ***DONE
 // Call a function to calculate the current monthly payment
 function setupIntialValues() {
+  const initLoanAmt = 1000;
+  const initTerm = 10;
+  const initRate = 5;
+
+  const prePopAmt = document.getElementById('loan-amount');
+  prePopAmt.value = initLoanAmt;
+  const prePopTerm = document.getElementById('loan-years');
+  prePopTerm.value = initTerm;
+  const prePopRate = document.getElementById('loan-rate');
+  prePopRate.value = initRate;
+
 }
 
 // Get the current values from the UI
