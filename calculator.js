@@ -35,6 +35,7 @@ function calculateMonthlyPayment() {
 
   const monthlyPmt = ((p * ((i/100)/12)) / (1 - Math.pow(1 + ((i/100)/12), -n))).toFixed(2);
 
-  console.log(monthlyPmt);
+  const calculatedPmt = document.getElementById('monthly-payment');
+  calculatedPmt.innerText = monthlyPmt;
 }
 
