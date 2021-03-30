@@ -21,6 +21,11 @@ function setupIntialValues() {
   prePopTerm.value = initTerm;
   const prePopRate = document.getElementById('loan-rate');
   prePopRate.value = initRate;
+
+  const initMonthlyPmt = ((initLoanAmt * ((initRate / 100) / 12)) / (1 - Math.pow(1 + ((initRate / 100) / 12), -initTerm))).toFixed(2);
+  
+  const prePopPmt = document.getElementById('monthly-payment');
+  prePopPmt.innerText = initMonthlyPmt;
 }
 
 function calculateMonthlyPayment() {
